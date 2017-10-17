@@ -19,17 +19,18 @@
                <children>
                   <Label fx:id="backwordtraversalLable" text="Label" />
                   <Pane fx:id="panee" prefHeight="189.0" prefWidth="775.0" />
+                  <Label fx:id="SearchR" text="Search Result :" visible="false" />
                   <HBox prefHeight="57.0" prefWidth="645.0">
                      <children>
                         <Label text="Enter a value" />
                         <TextField fx:id="valueInput" prefHeight="31.0" prefWidth="37.0" />
                         <Label text="enter an index" />
                         <TextField fx:id="indexInput" prefHeight="31.0" prefWidth="43.0" />
-                        <Button fx:id="search" mnemonicParsing="false" text="search" />
+                        <Button fx:id="search" mnemonicParsing="false" onAction="#search" text="search" />
                         <Button fx:id="insert" mnemonicParsing="false" onAction="#insert" text="insert" />
-                        <Button fx:id="delete" mnemonicParsing="false" text="delete" />
-                        <Button fx:id="forwardTraversalButton" mnemonicParsing="false" text="forward traversal" />
-                        <Button fx:id="backwardTraversalButton" mnemonicParsing="false" text="backward Traversal" />
+                        <Button fx:id="delete" mnemonicParsing="false" onAction="#delete" text="delete" />
+                        <Button fx:id="forwardTraversalButton" mnemonicParsing="false" onAction="#forwardTraversalButton" text="forward traversal" />
+                        <Button fx:id="backwardTraversalButton" mnemonicParsing="false" onAction="#backwardTraversalButton" text="backward Traversal" />
                      </children>
                      <padding>
                         <Insets left="20.0" right="20.0" />
